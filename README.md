@@ -10,7 +10,7 @@ Forked from: [https://github.com/ecemgo/bootstrap-portfolio-template](https://gi
 
 ## Preview
 
-[https://html-preview.github.io/?url=https://github.com/carlsonp/bootstrap-portfolio-template/blob/main/index.html](https://html-preview.github.io/?url=https://github.com/carlsonp/bootstrap-portfolio-template/blob/main/index.html)
+[https://carlsonp.github.io/bootstrap-portfolio-template/](https://carlsonp.github.io/bootstrap-portfolio-template/)
 
 ## Built With
 
