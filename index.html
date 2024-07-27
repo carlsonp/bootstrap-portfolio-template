@@ -4,25 +4,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio</title>
-    <link rel="stylesheet" href="css/bootstrap.css" >
+    <title>My Name</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/bootstrap-callout.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 
-    <!--
-    Images are from https://unsplash.com/
-    -->
+    <style>
+      .social-icon {
+          font-size: 24px;
+          margin: 0 10px;
+          color: black;
+          text-decoration: none;
+      }
+      .grid-image {
+          cursor: pointer;
+          transition: transform 0.2s;
+      }
+      .grid-image:hover {
+          transform: scale(1.05);
+      }
+      .modal-lg {
+          max-width: 90%;
+      }
+  </style>
 
 
 </head>
 <body>
     <nav id="scrolling_navbar" class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
         <div class="container">
-          <a class="navbar-brand" href="#">Personal Portfolio</a>
+          <a class="navbar-brand" href="#">My Name</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -37,12 +53,6 @@
               <li class="nav-item">
                 <a class="nav-link" href="#travel">Travel</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#blog">Blog</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#contact">Contact</a>
-              </li>
             </ul>
           </div>
         </div>
@@ -54,10 +64,29 @@
           <div class="container d-flex align-items-center py-5">
               <div class="col text-center bg-light m-4 p-4 text-dark bg-opacity-50 rounded-5 border border-2 border-white">
                 <img src="image/success.png" class="img-fluid col-lg-2 col-sm-6 col-xs-6 mb-4"> 
-                <p class="display-2 text-secondary mb-3">Personal Portfolio</p>
-                <p class="text-secondary fs-5 mb-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tellus lectus, dapibus a erat quis, venenatis feugiat nulla. Phasellus sit amet ante sapien.</p>
-                <a class="btn btn-success btn-lg active rounded-pill mb-3" href="#about">About</a>
-                <a class="btn btn-light btn-lg rounded-pill mb-3" href="#contact">Contact</a>
+                <p class="display-2 text-secondary mb-3">My Name</p>
+                <p class="text-secondary fs-5 mb-6">Lorem ipsum dolor sit amet, consectetur 
+                  adipiscing elit. Vivamus tellus lectus, dapibus a erat quis, venenatis feugiat nulla. Ph
+                  asellus sit amet ante sapien.</p>
+                  <div class="row justify-content-center">
+                    <div class="col-auto">
+                      <a href="https://facebook.com" target="_blank">
+                        <i class="fab fa-facebook-f social-icon"></i>
+                      </a>
+                      <a href="https://twitter.com" target="_blank">
+                        <i class="fab fa-twitter social-icon"></i>
+                      </a>
+                      <a href="https://instagram.com" target="_blank">
+                        <i class="fab fa-instagram social-icon"></i>
+                      </a>
+                      <a href="https://linkedin.com" target="_blank">
+                        <i class="fab fa-linkedin-in social-icon"></i>
+                      </a>
+                      <a href="https://github.com" target="_blank">
+                        <i class="fab fa-github social-icon"></i>
+                      </a>
+                    </div>
+                  </div>
             </div>
           </div>
         </section>
@@ -110,192 +139,83 @@
 
                 <div class="row pb-4" id="gallery" data-toggle="modal" data-target="#exampleModal">
                     <div class="col-12 col-sm-6 col-lg-3 mb-4">
-                      <img class="w-100 img-thumbnail" src="image/photo-1.jpg" data-target="#carouselExample" data-slide-to="0">
+                      <img src="image/photo-1.jpg" class="img-fluid grid-image w-100" data-bs-toggle="modal" data-bs-target="#carouselModal" data-bs-slide-to="0" alt="Image 1">
                     </div>
                     <div class="col-12 col-sm-6 col-lg-3 mb-4">
-                      <img class="w-100 img-thumbnail" src="image/photo-2.jpg" data-target="#carouselExample" data-slide-to="1">
+                      <img src="image/photo-2.jpg" class="img-fluid grid-image w-100" data-bs-toggle="modal" data-bs-target="#carouselModal" data-bs-slide-to="1" alt="Image 2">
                     </div>
                     <div class="col-12 col-sm-6 col-lg-3 mb-4">
-                      <img class="w-100 img-thumbnail" src="image/photo-3.jpg" data-target="#carouselExample" data-slide-to="2">
+                      <img src="image/photo-3.jpg" class="img-fluid grid-image w-100" data-target="#carouselExample" data-bs-toggle="modal" data-bs-target="#carouselModal" data-bs-slide-to="2" alt="Image 3">
                     </div>
                     <div class="col-12 col-sm-6 col-lg-3 mb-4">
-                      <img class="w-100 img-thumbnail" src="image/photo-4.jpg" data-target="#carouselExample" data-slide-to="3">
+                      <img src="image/photo-4.jpg" class="img-fluid grid-image w-100" data-target="#carouselExample" data-bs-toggle="modal" data-bs-target="#carouselModal" data-bs-slide-to="3" alt="Image 4">
                     </div>
                     <div class="col-12 col-sm-6 col-lg-3 mb-4">
-                        <img class="w-100 img-thumbnail" src="image/photo-5.jpg" data-target="#carouselExample" data-slide-to="4">
+                      <img src="image/photo-5.jpg" class="img-fluid grid-image w-100" data-target="#carouselExample" data-bs-toggle="modal" data-bs-target="#carouselModal" data-bs-slide-to="4" alt="Image 5">
                     </div>
                     <div class="col-12 col-sm-6 col-lg-3 mb-4">
-                        <img class="w-100 img-thumbnail" src="image/photo-6.jpg" data-target="#carouselExample" data-slide-to="5">
+                      <img src="image/photo-6.jpg" class="img-fluid grid-image w-100" data-target="#carouselExample" data-bs-toggle="modal" data-bs-target="#carouselModal" data-bs-slide-to="5" alt="Image 6">
                     </div>
                     <div class="col-12 col-sm-6 col-lg-3 mb-4">
-                        <img class="w-100 img-thumbnail" src="image/photo-7.jpg" data-target="#carouselExample" data-slide-to="6">
+                      <img src="image/photo-7.jpg" class="img-fluid grid-image w-100" data-target="#carouselExample" data-bs-toggle="modal" data-bs-target="#carouselModal" data-bs-slide-to="6" alt="Image 7">
                     </div>
                     <div class="col-12 col-sm-6 col-lg-3 mb-4">
-                        <img class="w-100 img-thumbnail" src="image/photo-8.jpg" data-target="#carouselExample" data-slide-to="7">
+                      <img src="image/photo-8.jpg" class="img-fluid grid-image w-100" data-target="#carouselExample" data-bs-toggle="modal" data-bs-target="#carouselModal" data-bs-slide-to="7" alt="Image 8">
                     </div>
                   </div>
                   
-                  <!-- Modal -->
-                  <!-- 
-                  This part is straight out of Bootstrap docs. Just a carousel inside a modal.
-                  -->
-                  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></span>
-                          </button>
-                        </div>
-                        <div class="modal-body">
-                          <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
-                            <div class="carousel-indicators">
-                                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="4" aria-label="Slide 5"></button>
-                                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="5" aria-label="Slide 6"></button>
-                                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="6" aria-label="Slide 7"></button>
-                                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="7" aria-label="Slide 8"></button>
-                              </div>
-                            <div class="carousel-inner">
-                              <div class="carousel-item active" data-bs-interval="3000">
-                                <img class="d-block w-100" src="image/photo-1.jpg">
-                              </div>
-                              <div class="carousel-item" data-bs-interval="3000">
-                                <img class="d-block w-100" src="image/photo-2.jpg">
-                              </div>
-                              <div class="carousel-item" data-bs-interval="3000">
-                                <img class="d-block w-100" src="image/photo-3.jpg">
-                              </div>
-                              <div class="carousel-item" data-bs-interval="3000">
-                                <img class="d-block w-100" src="image/photo-4.jpg">
-                              </div>
-                              <div class="carousel-item" data-bs-interval="3000">
-                                <img class="d-block w-100" src="image/photo-5.jpg">
-                              </div>
-                              <div class="carousel-item" data-bs-interval="3000">
-                                <img class="d-block w-100" src="image/photo-6.jpg">
-                              </div>
-                              <div class="carousel-item" data-bs-interval="3000">
-                                <img class="d-block w-100" src="image/photo-7.jpg">
-                              </div>
-                              <div class="carousel-item" data-bs-interval="3000">
-                                <img class="d-block w-100" src="image/photo-8.jpg">
-                              </div>
+                  <!-- Carousel Modal -->
+                  <div class="modal fade" id="carouselModal" tabindex="-1" aria-labelledby="carouselModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
-                            <a class="carousel-control-prev" href="#carouselExample" type="button" data-slide="prev">
-                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                              <span class="visually-hidden">Previous</span>
-                            </a>
-                            <a class="carousel-control-next" href="#carouselExample" type="button" data-slide="next">
-                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                              <span class="visually-hidden">Next</span>
-                            </a>
-                          </div>
+                            <div class="modal-body">
+                                <div id="carouselExample" class="carousel slide">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                          <img src="image/photo-1.jpg" class="d-block w-100" alt="Image 1">
+                                        </div>
+                                        <div class="carousel-item">
+                                          <img src="image/photo-2.jpg" class="d-block w-100" alt="Image 2">
+                                        </div>
+                                        <div class="carousel-item">
+                                          <img src="image/photo-3.jpg" class="d-block w-100" alt="Image 3">
+                                        </div>
+                                        <div class="carousel-item">
+                                          <img src="image/photo-4.jpg" class="d-block w-100" alt="Image 4">
+                                        </div>
+                                        <div class="carousel-item">
+                                          <img src="image/photo-5.jpg" class="d-block w-100" alt="Image 5">
+                                        </div>
+                                        <div class="carousel-item">
+                                          <img src="image/photo-6.jpg" class="d-block w-100" alt="Image 6">
+                                        </div>
+                                        <div class="carousel-item">
+                                          <img src="image/photo-7.jpg" class="d-block w-100" alt="Image 7">
+                                        </div>
+                                        <div class="carousel-item">
+                                          <img src="image/photo-8.jpg" class="d-block w-100" alt="Image 8">
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                            </div>
                         </div>
-                      </div>
                     </div>
-                  </div>
+                </div>
                   
             </div>
             
-        </section>
-
-        <section data-bs-spy="scroll" data-bs-target="#scrolling_navbar" class="py-5" id="blog">
-            <div class="container">
-                <div class="text-center py-5">
-                    <h2 class="fw-bolder">Blog</h2>
-                    <p class="fs-5">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas, necessitatibus.</p>
-                </div>
-
-                <div class="row">
-                    <div class="col-lg-4 col-md-6 mb-4">
-                        <div class="card">
-                            <img src="image/water-is-better.jpg" class="card-img-top">
-                            <div class="card-body">
-                                <h5 class="card-title text-center py-2">The Norwegian Fjords</h5>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora nam quidem quia, dignissimos modi possimus asperiores nihil blanditiis sunt voluptates quae facere placeat corporis? Ipsa, consequuntur reprehenderit? Repellendus, aliquam. Deleniti.</p>
-                                <a href="blog-page.html" class="btn btn-light d-flex justify-content-center">Click to read this article...</a>
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 mb-4">
-                        <div class="card">
-                            <img src="image/mountain-light.jpg" class="card-img-top">
-                            <div class="card-body">
-                                <h5 class="card-title text-center py-2">The Northern Lights</h5>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora nam quidem quia, dignissimos modi possimus asperiores nihil blanditiis sunt voluptates quae facere placeat corporis? Ipsa, consequuntur reprehenderit? Repellendus, aliquam. Deleniti.</p>
-                                <a href="#" class="btn btn-light d-flex justify-content-center">Click to read this article...</a>
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 mb-4">
-                        <div class="card">
-                            <img src="image/guatemala.jpg" class="card-img-top">
-                            <div class="card-body">
-                                <h5 class="card-title text-center py-2">Travelling to Guatemala</h5>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora nam quidem quia, dignissimos modi possimus asperiores nihil blanditiis sunt voluptates quae facere placeat corporis? Ipsa, consequuntur reprehenderit? Repellendus, aliquam. Deleniti.</p>
-                                <a href="#" class="btn btn-light d-flex justify-content-center">Click to read this article...</a>
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-
-
-            </div>
-        </section>
-
-        <section data-bs-spy="scroll" data-bs-target="#scrolling_navbar" class="bg-dark py-5" id="contact">
-            <div class="container">
-                <div class="text-white text-center py-5">
-                    <h2 class="fw-bolder">Contact</h2>
-                    <p class="fs-5">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas, necessitatibus.</p>
-                </div>
-
-                <div class="col-xxl-6 col-xl-7 col-lg-8 col-md-9 col-sm-10 col-11 mx-auto">
-                    <form action="" class="text-white fs-6">
-                        <div class="mb-3">
-                            <label class="form-label text-white">Name Surname</label>
-                            <input type="text" class="form-control">
-                        </div>
-                        <div class="mb-3">
-                            <label class="form-label text-white">Email</label>
-                            <input type="email" class="form-control">
-                        </div>
-                        <div class="mb-3">
-                            <label class="form-label text-white">Subject</label>
-                            <input type="text" class="form-control">
-                        </div>
-                        <div class="mb-3">
-                            <label class="form-label text-white">Message</label>
-                            <textarea type="text" rows="10" class="form-control"></textarea>
-                        </div>
-                        <div class="d-grid gap-2 col-lg-4 col-md-4 mx-auto">
-                            <button class="btn btn-success btn-lg rounded-pill">Send</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </section>
-
-        <footer class="bg-light">
-            <div class="container">
-                <p class="copyright-text text-center fs-8 py-4 mb-0">Copyright © 2023 <a class="text-dark" href="https://github.com/ecemgo" target="_blank">@ecemgo</a></p>
-                </div>
-            </div>
-
-        </footer>
+        </section>        
 
     </div>
 
@@ -312,10 +232,11 @@
         
     </script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" ></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/popper.min.js" ></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.7/umd/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
+
     <script src="js/main.js"></script>
    
 </body>
