@@ -230,6 +230,18 @@
         }
         };
         
+        document.addEventListener('DOMContentLoaded', function () {
+          var myModalEl = document.getElementById('carouselModal');
+          myModalEl.addEventListener('show.bs.modal', function (event) {
+            // Get the trigger element
+            var triggerElement = event.relatedTarget; 
+            var slideTo = triggerElement.getAttribute('data-bs-slide-to');
+            
+            var carousel = document.querySelector('#carouselExample');
+            var carouselInstance = new bootstrap.Carousel(carousel);
+            carouselInstance.to(slideTo);
+          });
+        });
     </script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
